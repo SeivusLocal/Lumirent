@@ -44,6 +44,9 @@
         .btn:hover {
             background-color: darkorange;
         }
+        .typewriter {
+            margin-top: 50px;
+        }
         .typewriter span {
             display: inline-block;
             overflow: hidden;
@@ -63,7 +66,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">Lumirent by Cléber Lemos</div>
+        <div class="logo">Lumirent </div>
+        <div class="logo">by Cléber Lemos</div>
         <div id="page1" class="page">
             <div class="typewriter"><span>Seja bem-vindo! Qual seu nome?</span></div>
             <div class="input-field">
@@ -79,13 +83,12 @@
             <button class="btn" onclick="nextPage(3)">Próximo</button>
         </div>
         <div id="page3" class="page" style="display: none;">
-            <div class="typewriter"><span>Qual produto você deseja?</span></div>
+            <div class="typewriter"><span>Para qual produto você deseja um orçamento?</span></div>
             <div class="input-field">
                 <select id="product" required>
-                  <option value="Escolha uma opção">Escolha uma opção</option>
                     <option value="Comand Wing MA2">Comand Wing MA2</option>
                     <option value="Comand Wing MA2 com tela">Comand Wing MA2 com tela</option>
-                    <option value="As duas opções">As duas opções</option>
+                    <option value="Quero um orçamento para os dois">Quero um orçamento para os dois</option>
                 </select>
             </div>
             <button class="btn" onclick="submitForm()">Solicitar orçamento</button>
